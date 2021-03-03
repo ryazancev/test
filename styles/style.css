@@ -41,8 +41,6 @@ section {
 }
 
 .page-body {
-  /* max-width: 1440px; */
-	margin: 0 auto;
   font-size: 16px;
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
@@ -60,7 +58,7 @@ section {
   margin-bottom: 96px;
 
   font-size: 40px;
-	line-height: 44px;
+	line-height: 46px;
   text-align: center;
   color: #f7f3ea;
   text-transform: uppercase;
@@ -76,7 +74,7 @@ section {
 }
 
 .promo__list {
-  width: 500px;
+  width: 50%;
   padding-top: 50px;
 }
 
@@ -345,4 +343,55 @@ section {
   background-color: #e7f1f8;
 	border: 1px solid rgb(240, 63, 63);
   border-radius: 1px;
+}
+
+/* Media */
+
+@media (max-width: 1024px) {
+
+	/* Promo */
+
+	.promo__title {
+		font-size: 32px;
+	}
+
+	.promo__photo img {
+		width: 200px;
+	}
+
+	.promo__wrapper {
+		justify-content: space-between;
+	}
+
+	.promo__list {
+		padding-top: 20px;
+	}
+
+	.promo__item {
+		margin-bottom: 50px;
+	
+		font-size: 18px;
+	}
+
+	/* Composition */
+
+	.composition__card--image img {
+		width: 200px;
+	}
+
+	/* About */
+
+	.about__image img {
+		width: 480px;
+	}
+
+	/* Order */
+
+	.order__title {
+		font-size: 32px;
+	}
+
+	.order__image img {
+		width: 200px;
+	}
 }
