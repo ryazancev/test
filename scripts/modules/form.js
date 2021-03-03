@@ -10,10 +10,12 @@ const formOrder = () => {
 		const target = event.target;
 
 		if (target.type === 'text') {
+			helpText.remove();
 			target.value = target.value.replace(/[^А-яа-я ]/, '');
 		}
 
 		if (target.type === 'tel') {
+			helpText.remove();
 			target.value = target.value.replace(/\D/, '');
 		}
 	})
