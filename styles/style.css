@@ -1,0 +1,316 @@
+/* Global */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+figure,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: black;
+  text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+section {
+	padding: 70px 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+.page-body {
+	max-width: 1440px;
+
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Promo */
+
+.promo {
+	background-color: rgba(60, 47, 105, 0.7);
+	overflow: hidden;
+}
+
+.promo__title {
+	font-size: 40px;
+	color: #f7f3ea;
+	text-align: center;
+	margin-bottom: 96px;
+	text-transform: uppercase;
+}
+
+.promo__wrapper {
+	display: flex;
+	flex: 1 0 0;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.promo__list {
+	width: 500px;
+	padding-top: 50px;
+}
+
+.promo__item {
+	font-size: 24px;
+	color: #f7f3ea;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.promo__button {
+	width: 175px;
+	margin: 0 auto;
+	padding: 13px 33px;
+	border: 2px solid #f7f3ea;
+	background: transparent;
+	text-align: center;
+}
+
+.promo__button:focus,
+.promo__button:hover {
+	opacity: 0.6;
+}
+
+.promo__link {
+	color: #f7f3ea;
+	text-transform: uppercase;
+}
+
+.promo__videoBg{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+/* Composition */
+
+.composition {
+	background-color: #17c2a4;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.composition__card {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.composition__card--image {
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	text-align: center;
+	margin-top: 150px;
+}
+
+.card__image {
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 30px;
+}
+
+.card__subtitle {
+	color: #f7f3ea;
+	margin-bottom: 30px;
+}
+
+/* Reviews */
+
+.reviews {
+	background-color: #e7f1f8;
+	text-align: center;
+}
+
+.reviews__block {
+	display: none;
+}
+
+.reviews__author-picture {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.reviews__author-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.reviews__button {
+	border: none;
+	background: transparent;
+}
+
+.reviews__button:focus,
+.reviews__button:hover {
+	opacity: 0.6;
+}
+
+.reviews__silder--active {
+	display: block;
+}
+
+/* About */
+
+.about {
+	background-color: #ffdd99;
+}
+
+.about .promo__link {
+	color: black;
+}
+
+.about .promo__button {
+	border-color: black;
+}
+
+.about__wrapper {
+	display: flex;
+	margin-bottom: 70px;
+}
+
+.about__text {
+	align-self: center;
+}
+
+.about__list {
+	display: flex;
+	width: 60%;
+	margin: 0 auto;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+
+/* Order */
+
+.order {
+	background-color: #3c5499;
+	color: #f7f3ea;
+}
+
+.order__title {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 70px;
+	text-transform: uppercase;
+}
+
+.timer__numbers {
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 70px;
+}
+
+.order__price {
+	margin-left: 170px;
+}
+
+.order__price--old {
+	text-decoration: line-through;
+	font-size: 30px;
+	margin: 0;
+	margin-left: 30px;
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.order__price--new {
+	width: 300px;
+	font-size: 48px;
+	margin: 0;
+	margin-bottom: 20px;
+	animation: pulsing 1.3s infinite;
+}
+
+
+.order__wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.order__form {
+	width: 40%;
+	align-self: center;
+}
+
+.order__label {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.order__label:last-of-type {
+	margin-bottom: 50px;
+}
+
+.order__input {
+	width: 100%;
+	height: 40px;
+	padding: 20px;
+	outline: none;
+}
+
+.order__button {
+	color: #f7f3ea;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.order__button:focus,
+.order__button:hover {
+	opacity: 0.6;
+}
+
+.helpText {
+	width: 100%;
+	background-color: #e7f1f8;
+	font-size: 14px;
+	color: black;
+	margin-top: 2px;
+	border-radius: 1px;
+}
