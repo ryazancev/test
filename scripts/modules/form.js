@@ -32,6 +32,10 @@ const formOrder = () => {
 			helpText.textContent = 'Пожалуйста введите номер телефона, начиная с цифры 8';
 			orderLabelTel.append(helpText);
 		}
+
+		setTimeout(() => {
+			helpText.remove();
+		}, 2000)
 	}, true)
 
 };
